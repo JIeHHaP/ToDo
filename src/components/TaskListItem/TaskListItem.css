@@ -1,0 +1,25 @@
+.task {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 10px;
+	background-color: rgba(255, 255, 255, .3);
+	box-shadow: 0 0 4px rgba(255, 255, 255, .2);
+	width: 90%;
+	min-height: 35px;
+	border-radius: 10px;
+	border: none;
+	margin-bottom: 5px;
+}
+
+.task-text {
+	width: 270px;
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	padding: 3px;
+}
+
+.done {
+	text-decoration: line-through;
+}

@@ -1,0 +1,9 @@
+.add-new-task {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 60px;
+	padding: 0 5px;
+	margin-bottom: 15px;
+}

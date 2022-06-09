@@ -1,0 +1,10 @@
+.main-btn {
+	height: 44px;
+	width: 80px;
+	background-color: #ff7179;
+	border-radius: 15px;
+	box-shadow: 0 0 6px rgba(255, 113, 121, 0.7);
+	font-size: 18px;
+	border: none;
+	color: #fff;
+}
