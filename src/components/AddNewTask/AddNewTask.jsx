@@ -6,19 +6,22 @@ import {useState} from "react";
 
 const AddNewTask = ({placeholder, btnText, create}) => {
 
-	const [taskText, setTaskText] = useState({text: ''})
+	const [taskText, setTaskText] = useState({text: ""})
 	const addTask = (e) => {
 		e.preventDefault()
 		const newTask = {
-			...taskText, id: Date.now()
+			id: Date.now(),
+			...taskText,
+			done: false
 		}
 		console.log(newTask)
 		create(newTask)
 		setTaskText({text: ""})
 	}
 
+
 	return (
-		<div className="add-new-task">
+		<form className="add-new-task">
 			<MainInput
 				placeholder = {placeholder}
 				value={taskText.text}
@@ -28,7 +31,7 @@ const AddNewTask = ({placeholder, btnText, create}) => {
 				onClick={addTask}
 				btnText = {btnText}
 			/>
-		</div>
+		</form>
 	);
 };
 

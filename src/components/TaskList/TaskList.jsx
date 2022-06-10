@@ -1,9 +1,24 @@
 import React from 'react';
 import "./TaskList.css"
-const TaskList = () => {
-	return (
-		<div>
+import TaskListItem from "../TaskListItem/TaskListItem";
 
+const TaskList = ({tasks, taskToggle, remove}) => {
+
+	const returnTaskStatus = (status, id) => {
+		if (status) {
+			taskToggle(id)
+		}
+
+	}
+	return (
+		<div className="tasks-list">
+			{tasks.map((task) =>
+				<TaskListItem
+					toggle={returnTaskStatus}
+					task={task}
+					key={task.id}
+				/>
+			)}
 		</div>
 	);
 };

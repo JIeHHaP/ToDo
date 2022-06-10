@@ -1,17 +1,24 @@
-.main-checkbox {
+.custom-checkbox {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+.checkbox {
+	display: inline-block;
 	height: 25px;
 	width: 25px;
-	border: 1px solid #ff7179;
-	border-radius: 5px;
+	border-radius: 7px;
+}
+
+.checkbox-container {
+	padding: 0;
+	margin: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-.checked {
-	background-color: #ff7179;
-}
-
-.check-icon {
-	color: #fff;
 }
